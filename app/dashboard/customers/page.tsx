@@ -1,6 +1,9 @@
-import { fetchLatestInvoices } from '@/app/lib/data';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Customers',
+};
 
 export default async function Page() {
-  const latestInvoices = await fetchLatestInvoices();
   return <p>Customers Page</p>;
 }
